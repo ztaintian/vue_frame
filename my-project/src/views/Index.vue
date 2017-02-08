@@ -7,11 +7,18 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import store from '../store'
+// console.log(mapState)
+// console.log(store)
 export default {
     name: 'index',
     data() {
         return{
         }
+    },
+    mounted(){
+        console.log(this.$store.state.weigth)
     },
     methods:{
         home:function(){

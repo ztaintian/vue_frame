@@ -5,9 +5,14 @@ import App from './App'
 import '../flexible/flexible.js' // 控制rem
 import VueRouter from 'vue-router'
 import router from './router'
+// import Vuex from 'vuex' 
+import store from './store'
 /* eslint-disable no-new */
 Vue.use(VueRouter)
+console.log(store)
+// Vue.use(Vuex)
 new Vue({
+  store,
   router,
   el: '#app',
   template: '<App/>',
